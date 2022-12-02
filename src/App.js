@@ -1,11 +1,19 @@
 import './App.css';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
+import { portalRoutes } from './@shared/routes/portalRoute';
 
 function App() {
+  const router = createBrowserRouter(portalRoutes);
+
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-      <button class="btn btn-dark">Button</button>
-    </div>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 }
 
