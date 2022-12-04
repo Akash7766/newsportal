@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const RactangleCard = ({link='/',border='border-b-2'}) => {
+const RactangleCard = ({link='/'}) => {
 
     return (
-        <>
+        <div className='mb-5 pb-5 custom-border-bottom'>
             <Link to={link}>
-            <div className={`flex justify-between border-b-2 pb-5 mb-5 ${border}`}>
+            <div className={`flex justify-between`}>
                 <div className="w-full">
-                    <h2 className="text-xl font-semibold">শোয়েব মালিকের সঙ্গে সম্পর্ক নিয়ে মুখ খুললেন সেই পাকিস্তানি অভিনেত্রী</h2>
+                    <h2 className="text-md lg:text-xl font-semibold">শোয়েব মালিকের সঙ্গে সম্পর্ক নিয়ে মুখ খুললেন সেই পাকিস্তানি অভিনেত্রী</h2>
                     <div className="footer mt-4 text-gray-500">
                     <p>2 hours ago</p>
                     </div>
@@ -18,7 +18,7 @@ const RactangleCard = ({link='/',border='border-b-2'}) => {
                 </figure>
             </div>
             </Link>
-        </>
+        </div>
     );
 };
 
