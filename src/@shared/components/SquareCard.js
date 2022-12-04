@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const SquareCard = ({link='/'}) => {
+const SquareCard = ({link='/categories/id'}) => {
 
 
     return (

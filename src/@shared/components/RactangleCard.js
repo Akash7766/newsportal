@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const RactangleCard = ({link='/'}) => {
+const RactangleCard = ({link='/categories/id'}) => {
 
     return (
         <div className='mb-5 pb-5 custom-card custom-border-bottom'>
