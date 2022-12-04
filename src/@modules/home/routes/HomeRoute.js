@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../../@shared/section/Footer';
 import BusinessSection from '../section/BusinessSection';
 import CatagorieSection from '../section/CatagorieSection';
 import EntertainmentSection from '../section/EntertainmentSection';
@@ -15,6 +16,7 @@ const HomeRoute = () => {
             <WorldSection/>
             <BusinessSection/>
             <CatagorieSection/>
+            <Footer/>
         </div>
     );
 };
