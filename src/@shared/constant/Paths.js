@@ -1,4 +1,7 @@
 export const Paths = {
     HomeRoute : '/',
-    LoginRoute: '/login'
+    userLogin:'/user',
+    LoginRoute: '/user/login',
+    SignupRoute: '/user/signup',
+    ResetRoute: '/user/reset',
 }
