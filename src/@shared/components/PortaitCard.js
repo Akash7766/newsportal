@@ -7,7 +7,7 @@ const PortaitCard = ({link='/'}) => {
 
     return (
         <div className='mb-5 pb-5 custom-card custom-border-bottom'>
-            <Link to='/'>
+            <Link to={link}>
                 <div className="">
                     <figure className='w-full overflow-hidden'>
                         <img className='w-full transition-all' src="https://images.prothomalo.com/prothomalo-bangla%2F2022-12%2F1f8c0ec1-a86b-42c5-aab0-da20a6eb8fce%2F694822_01_02.jpg?rect=0%2C0%2C5490%2C3088&auto=format%2Ccompress&fmt=webp&format=webp&w=900&dpr=1.0" alt="Movie"/>

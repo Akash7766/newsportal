@@ -8,7 +8,7 @@ const LifeStyleSection = () => {
         <div className='entertainment'>
             <SectionHeader title={'LifeStyleSection'} link={'/life-style'}/>
             <div className='grid md:grid-cols-4 gap-5'>
-                <PortaitCard/>
+                <PortaitCard link='/ok'/>
                 <PortaitCard/>
                 <PortaitCard/>
                 <PortaitCard/>
