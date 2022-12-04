@@ -1,4 +1,5 @@
 import React from 'react';
+import BusinessSection from '../section/BusinessSection';
 import EntertainmentSection from '../section/EntertainmentSection';
 import LifeStyleSection from '../section/LifeStyleSection';
 import WorldSection from '../section/WorldSection';
@@ -11,6 +12,7 @@ const HomeRoute = () => {
             <EntertainmentSection/>
             <LifeStyleSection/>
             <WorldSection/>
+            <BusinessSection/>
         </div>
     );
 };
