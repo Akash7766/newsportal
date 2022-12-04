@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../../../@shared/section/Footer';
 import BusinessSection from '../section/BusinessSection';
 import CatagorieSection from '../section/CatagorieSection';
 import EntertainmentSection from '../section/EntertainmentSection';
@@ -9,14 +8,12 @@ import WorldSection from '../section/WorldSection';
 
 const HomeRoute = () => {
     return (
-        <div className='container mx-auto'>
-            HomeRoute page
+        <div>
             <EntertainmentSection/>
             <LifeStyleSection/>
             <WorldSection/>
             <BusinessSection/>
             <CatagorieSection/>
-            <Footer/>
         </div>
     );
 };

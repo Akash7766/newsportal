@@ -4,6 +4,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { portalRoutes } from './@shared/routes/portalRoute';
+import Footer from './@shared/section/Footer';
 
 function App() {
   const router = createBrowserRouter(portalRoutes);
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
+      
     </>
   );
 }
