@@ -1,14 +1,16 @@
 import React from 'react';
-import Entertainment from '../section/Entertainment';
-import LifeStyle from '../section/LifeStyle';
+import EntertainmentSection from '../section/EntertainmentSection';
+import LifeStyleSection from '../section/LifeStyleSection';
+import WorldSection from '../section/WorldSection';
 
 
 const HomeRoute = () => {
     return (
         <div className='container mx-auto'>
             HomeRoute page
-            <Entertainment/>
-            <LifeStyle/>
+            <EntertainmentSection/>
+            <LifeStyleSection/>
+            <WorldSection/>
         </div>
     );
 };

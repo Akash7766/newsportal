@@ -2,11 +2,11 @@ import React from 'react';
 import PortaitCard from '../../../@shared/components/PortaitCard';
 import SectionHeader from '../../../@shared/components/SectionHeader';
 
-const LifeStyle = () => {
+const LifeStyleSection = () => {
     return (
         <>
         <div className='entertainment'>
-            <SectionHeader title={'LifeStyle'} link={'/life-style'}/>
+            <SectionHeader title={'LifeStyleSection'} link={'/life-style'}/>
             <div className='grid md:grid-cols-4 gap-5'>
                 <PortaitCard/>
                 <PortaitCard/>
@@ -18,4 +18,4 @@ const LifeStyle = () => {
     );
 };
 
-export default LifeStyle;
+export default LifeStyleSection;

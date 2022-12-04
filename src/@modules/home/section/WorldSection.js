@@ -3,24 +3,25 @@ import PortaitCard from '../../../@shared/components/PortaitCard';
 import RactangleCard from '../../../@shared/components/RactangleCard';
 import SectionHeader from '../../../@shared/components/SectionHeader';
 
-const Entertainment = () => {
+const WorldSection = () => {
     return (
         <>
         <div className='entertainment'>
-            <SectionHeader title={'Entertainment'} link={'/entertainment'}/>
+            <SectionHeader title={'WorldSection'} link={'/world'}/>
             <div className='grid md:grid-cols-3 gap-5'>
                 <div className='custom-border'>
-                    <RactangleCard/>
-                    <RactangleCard link='/akash'/>
-                    <RactangleCard border='border-none'/>
-                </div>
-                <div>
                     <PortaitCard/>
+                    <RactangleCard/>
                 </div>
                 <div className='custom-border'>
                     <RactangleCard/>
                     <RactangleCard/>
-                    <RactangleCard border='border-none'/>
+                    <RactangleCard/>
+                    <RactangleCard/>
+                </div>
+                <div className='custom-border'>
+                    <PortaitCard/>
+                    <RactangleCard/>
                 </div>
             </div>
         </div>
@@ -28,4 +29,4 @@ const Entertainment = () => {
     );
 };
 
-export default Entertainment;
+export default WorldSection;

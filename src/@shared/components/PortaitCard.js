@@ -6,14 +6,14 @@ const PortaitCard = ({link='/'}) => {
 
 
     return (
-        <div className='mb-5 pb-5 custom-border-bottom'>
+        <div className='mb-5 pb-5 custom-card custom-border-bottom'>
             <Link to='/'>
                 <div className="">
-                    <figure className='w-full'>
-                        <img className='w-full' src="https://images.prothomalo.com/prothomalo-bangla%2F2022-11%2F696d812a-ddd2-43a6-b212-9f07d06f87b0%2Funknown_161439941_3840196849427903_131099263249821720_n.jpg?rect=0%2C0%2C1062%2C708&auto=format%2Ccompress&fmt=webp&format=webp&w=300&dpr=1.0" alt="Movie"/>
+                    <figure className='w-full overflow-hidden'>
+                        <img className='w-full transition-all' src="https://images.prothomalo.com/prothomalo-bangla%2F2022-12%2F1f8c0ec1-a86b-42c5-aab0-da20a6eb8fce%2F694822_01_02.jpg?rect=0%2C0%2C5490%2C3088&auto=format%2Ccompress&fmt=webp&format=webp&w=900&dpr=1.0" alt="Movie"/>
                     </figure>
                     <div className="">
-                        <h2 className="text-xl lg:text-2xl font-semibold my-3">আসছে ব্রুস লির বায়োপিক, লি চরিত্রে অভিনয় করবেন আরেক লি</h2>
+                        <h2 className="text-xl lg:text-2xl font-semibold my-3 transition-all">আসছে ব্রুস লির বায়োপিক, লি চরিত্রে অভিনয় করবেন আরেক লি</h2>
                         <p >
                             {news.slice(0,150)}...
                         </p>
