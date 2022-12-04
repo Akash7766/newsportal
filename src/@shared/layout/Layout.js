@@ -1,13 +1,17 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import Footer from '../section/Footer';
 
 const Layout = () => {
+    const location = useLocation()
+    const removeFooterPaths = location.pathname === '/login'
     return (
         <div className='container mx-auto'>
             <div>This is header</div>
                 <Outlet/>
-            <Footer/>
+            {
+                removeFooterPaths || <Footer />
+            }
         </div>
     );
 };
