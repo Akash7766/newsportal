@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaCopy, FaFacebookSquare, FaTwitterSquare, FaWhatsappSquare } from 'react-icons/fa';
-import { Link, useLocation, useParams } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import MixCard from '../../../@shared/components/MixCard';
 import RactangleCard from '../../../@shared/components/RactangleCard';
 import SectionHeader from '../../../@shared/components/SectionHeader';
@@ -10,7 +10,6 @@ import PostDetails from '../components/PostDetails';
 const PostDetailsRoute = () => {
     const location =useLocation()
     const categorie = location.pathname.split("/")[1]
-    const params = useParams()
     return (
         <div className='my-5'>
             <div className='flex justify-center my-5'>

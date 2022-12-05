@@ -4,6 +4,7 @@ export const Paths = {
     LoginRoute: '/user/login',
     SignupRoute: '/user/signup',
     ResetRoute: '/user/reset',
-    Categories:"/categories",
-    PostDetailsRoute: (id = ":id") => `/categories/${id}`
+    Categories:"/category",
+    Categorty : (name= ":name") => `/category/${name}`,
+    PostDetailsRoute: (id=":id" , name= ":name") => `/category/${name}/${id}`
 }

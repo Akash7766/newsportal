@@ -11,8 +11,8 @@ const EntertainmentSection = () => {
             <div className='grid md:grid-cols-3 gap-5'>
                 <div className='custom-border'>
                     <RactangleCard/>
-                    <RactangleCard link='/akash'/>
-                    <RactangleCard border='border-none'/>
+                    <RactangleCard />
+                    <RactangleCard />
                 </div>
                 <div>
                     <PortaitCard/>
@@ -20,7 +20,7 @@ const EntertainmentSection = () => {
                 <div className='custom-border'>
                     <RactangleCard/>
                     <RactangleCard/>
-                    <RactangleCard border='border-none'/>
+                    <RactangleCard/>
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const TextCard = ({link='/categories/id'}) => {
+const TextCard = ({link='/category/football/id'}) => {
     return (
         <div className='mb-3 pb-3 custom-card custom-border-bottom'>
                 <Link to={link}>

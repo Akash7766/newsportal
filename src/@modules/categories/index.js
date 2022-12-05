@@ -4,7 +4,8 @@ import PostDetailsRoute from "./routes/PostDetailsRoute";
 
 
 export const CategoriesRoutes = [
-    {path: Paths.Categories , element: <CategoriesRoute/>},
+    // {path: Paths.Categories , element: <CategoriesRoute/>},
     {path: Paths.PostDetailsRoute() , element: <PostDetailsRoute/>},
+    {path: Paths.Categorty() , element: <CategoriesRoute/>},
    
 ]
