@@ -7,7 +7,7 @@ import SectionHeader from '../../../@shared/components/SectionHeader';
 import SquareCard from '../../../@shared/components/SquareCard';
 import PostDetails from '../components/PostDetails';
 import {FacebookShareButton,FacebookIcon} from "react-share"
-import {Helmet} from "react-helmet";
+import { Helmet } from 'react-helmet-async';
 
 const PostDetailsRoute = () => {
     const location =useLocation()
@@ -17,6 +17,7 @@ const PostDetailsRoute = () => {
              <Helmet>
                 <meta charSet="utf-8" />
                 <title>Bangladesh won by 1 wicket against India</title>
+                <link rel="canonical" href="http://localhost:3000/category/bangladesh/id" />
                 <meta name="description" content="Cricket match highlights" />
                 <meta property='og:site_name' content='News Portal'/>
                 <meta property='og:title' content='News Portal'/>
