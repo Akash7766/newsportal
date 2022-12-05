@@ -17,6 +17,9 @@ code {
 }
 
 /* custom card */
+.custom-card:hover h1{
+  color: rgb(251, 255, 0);
+}
 .custom-card:hover h2{
   color: rgb(41, 41, 165);
 }
