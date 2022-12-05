@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import Hero from '../../../@shared/components/Hero';
 import { Menu } from '../../../@shared/constant/Menu';
 import BusinessSection from '../section/BusinessSection';
 import CatagorieSection from '../section/CatagorieSection';
@@ -13,6 +14,7 @@ const HomeRoute = () => {
     
     return (
         <div>
+            <Hero/>
             <EntertainmentSection/>
             <LifeStyleSection/>
             <WorldSection/>
