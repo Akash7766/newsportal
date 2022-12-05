@@ -6,12 +6,19 @@ import RactangleCard from '../../../@shared/components/RactangleCard';
 import SectionHeader from '../../../@shared/components/SectionHeader';
 import SquareCard from '../../../@shared/components/SquareCard';
 import PostDetails from '../components/PostDetails';
+import {FacebookShareButton,FacebookIcon} from "react-share"
+import {Helmet} from "react-helmet";
 
 const PostDetailsRoute = () => {
     const location =useLocation()
     const categorie = location.pathname.split("/")[1]
     return (
         <div className='my-5'>
+             <Helmet>
+                <meta charSet="utf-8" />
+                <title>Bangladesh won by 1 wicket against India</title>
+                <meta name="description" content="Cricket match highlights" />
+            </Helmet>
             <div className='flex justify-center my-5'>
                 <img src='https://tpc.googlesyndication.com/simgad/3217729136485671980' alt='ad images'/>
             </div>
@@ -27,10 +34,14 @@ const PostDetailsRoute = () => {
                                     <p className='text-xs'>প্রকাশ: ০৪ ডিসেম্বর ২০২২, ২০: ০০</p>
                                 </div>
                                 <div className='flex gap-5'>
-                                    <Link className='text-3xl hover:scale-105 transition-all text-blue-600'><FaFacebookSquare/></Link>
-                                    <Link className='text-3xl hover:scale-105 transition-all text-blue-400'><FaTwitterSquare/></Link>
-                                    <Link className='text-3xl hover:scale-105 transition-all text-orange-400'><FaWhatsappSquare/></Link>
-                                    <Link className='text-3xl hover:scale-105 transition-all text-blue-600'><FaCopy/></Link>
+                                    <FacebookShareButton url='https://akash-portal.vercel.app/category/bangladesh/id' quote='Hello Developers!'>
+                                        <div className='text-3xl hover:scale-105 transition-all text-blue-600'>
+                                            <FaFacebookSquare/>
+                                        </div>  
+                                    </FacebookShareButton>
+                                    <div className='text-3xl hover:scale-105 transition-all text-blue-400'><FaTwitterSquare/></div>
+                                    <div className='text-3xl hover:scale-105 transition-all text-orange-400'><FaWhatsappSquare/></div>
+                                    <div className='text-3xl hover:scale-105 transition-all text-blue-600'><FaCopy/></div>
                                     </div>
                             </div>
                         </div>
