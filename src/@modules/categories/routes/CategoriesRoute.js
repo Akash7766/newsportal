@@ -1,4 +1,3 @@
-import React from 'react';
 import Hero from '../../../@shared/components/Hero';
 import RactangleCard from '../../../@shared/components/RactangleCard';
 const CategoriesRoute = () => {

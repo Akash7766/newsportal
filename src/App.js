@@ -4,15 +4,16 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { portalRoutes } from './@shared/routes/portalRoute';
-import Footer from './@shared/section/Footer';
-
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 function App() {
   const router = createBrowserRouter(portalRoutes);
+  const queryClient = new QueryClient()
 
   return (
     <>
-      <RouterProvider router={router} />
-      
+        <QueryClientProvider client={queryClient}>
+          <RouterProvider router={router} />
+        </QueryClientProvider>
     </>
   );
 }

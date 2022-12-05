@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const TextCard = ({link='/category/football/id' , serial="0"}) => {
-    console.log(serial);
     if (serial > 0 ){
         return <div className='mb-3 pb-3 custom-card custom-border-bottom'>
                     <Link to={link}>
